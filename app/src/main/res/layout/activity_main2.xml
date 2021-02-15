@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/splashh">
+
+    <include layout="@layout/activity_header_and_footer">
+
+    </include>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pg1"
+        android:visibility="invisible">
+
+    </ProgressBar>
+
+    <RelativeLayout
+        android:id="@+id/rv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="35dp"
+        android:background="@drawable/back2">
+
+
+        <TextView
+            android:id="@+id/q1t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Q1. What is My Correct name?"
+            android:padding="5dp"
+            android:background="@drawable/back23"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+
+            >
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/rgq1"
+            android:layout_below="@id/q1t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp">
+
+            <RadioButton
+                android:id="@+id/rbq1"
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+                android:text="Vijaya">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rbq2"
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+                android:text="Vijaya shree">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rbq3"
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+                android:text="Vijaya shree kanwal">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rbq4"
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+                android:text="Vijji">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_below="@id/rgq1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:text="Next"
+            android:onClick="button1">
+        </Button>
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="35dp"
+        android:background="@drawable/back2">
+        <TextView
+            android:id="@+id/q2t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Q1. What is question 2nd?"
+            android:padding="5dp"
+            android:background="@drawable/back23"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+           >
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/rgq2"
+            android:layout_below="@id/q2t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp">
+
+            <RadioButton
+                android:id="@+id/rcq1"
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+                android:text="Vijaya"
+                >
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rcq2"
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+                android:text="Vijaya shree">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rcq3"
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+                android:text="Vijaya shree kanwal">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rcq4"
+                android:layout_width="250dp"
+
+                android:layout_height="wrap_content"
+                android:text="Vijji">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_below="@id/rgq2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:text="Next"
+            android:onClick="button2">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="35dp"
+        android:background="@drawable/back2">
+        <TextView
+            android:id="@+id/q3t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Q1. What is question 3rd?"
+            android:padding="5dp"
+            android:background="@drawable/back23"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            >
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/rgq3"
+            android:layout_below="@id/q3t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp">
+
+            <RadioButton
+                android:id="@+id/rdq1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vijaya">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rdq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vijaya shree">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rdq3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vijaya shree kanwal">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rdq4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vijji">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_below="@id/rgq3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:text="Next"
+            android:onClick="button3">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="35dp"
+        android:background="@drawable/back2">
+        <TextView
+            android:id="@+id/q4t"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Q1. What is question 4th ?"
+            android:padding="5dp"
+            android:background="@drawable/back23"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+           >
+
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/rgq4"
+            android:layout_below="@id/q4t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp">
+
+            <RadioButton
+                android:id="@+id/req1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vijaya">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/req2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vijaya shree">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/req3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vijaya shree kanwal">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/req4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vijji">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_below="@id/rgq4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:text="Submit"
+            android:onClick="button4">
+
+        </Button>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/im3"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:src="@drawable/hope2"
+        ></ImageView>
+
+
+</RelativeLayout>

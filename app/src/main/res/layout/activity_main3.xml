@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <Button
+        android:id="@+id/new1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="new"
+        android:onClick="back"></Button>
+
+    <Button
+        android:layout_below="@id/new1"
+        android:id="@+id/new2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="rate us"
+        android:onClick="back2"></Button>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:rating="2"
+        android:visibility="invisible"
+      android:layout_below="@id/new2"
+        android:layout_centerHorizontal="true"
+        android:progressTint="@android:color/white"
+        android:progressBackgroundTint="@color/black">
+
+    </RatingBar>
+
+    <ImageView
+        android:id="@+id/im3"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:src="@drawable/hope2"
+        ></ImageView>
+
+
+</RelativeLayout>
