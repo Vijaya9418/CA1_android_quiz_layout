@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
-    android:background="@drawable/splashh">
+    android:background="@drawable/k1">
 
     <include layout="@layout/activity_header_and_footer">
 
@@ -32,14 +32,15 @@
         <TextView
             android:id="@+id/q1t"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" Q1. What is My Correct name?"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="   Q1. What is the capital of India?"
             android:padding="5dp"
             android:background="@drawable/back23"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="15dp"
 
 
             >
@@ -58,7 +59,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Vijaya">
+                android:text="Calcutta">
 
             </RadioButton>
 
@@ -67,7 +68,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Vijaya shree">
+                android:text="Delhi">
 
             </RadioButton>
 
@@ -76,7 +77,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Vijaya shree kanwal">
+                android:text="Bihar">
 
             </RadioButton>
 
@@ -85,7 +86,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Vijji">
+                android:text="Assam">
 
             </RadioButton>
 
@@ -93,9 +94,10 @@
 
         <Button
             android:layout_below="@id/rgq1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textSize="10dp"
+            android:background="@drawable/back23"
             android:layout_alignParentEnd="true"
             android:layout_margin="20dp"
             android:text="Next"
@@ -117,12 +119,13 @@
         <TextView
             android:id="@+id/q2t"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" Q1. What is question 2nd?"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="   Q2. Who is the national birld of India?"
             android:padding="5dp"
             android:background="@drawable/back23"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="15dp"
 
            >
 
@@ -140,7 +143,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Vijaya"
+                android:text="Dove"
                 >
 
             </RadioButton>
@@ -150,7 +153,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Vijaya shree">
+                android:text="Peacock">
 
             </RadioButton>
 
@@ -159,7 +162,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Vijaya shree kanwal">
+                android:text="sparrow">
 
             </RadioButton>
 
@@ -168,7 +171,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Vijji">
+                android:text="Goose">
 
             </RadioButton>
 
@@ -176,12 +179,13 @@
 
         <Button
             android:layout_below="@id/rgq2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textSize="10dp"
             android:layout_alignParentEnd="true"
             android:layout_margin="20dp"
             android:text="Next"
+            android:background="@drawable/back23"
             android:onClick="button2">
 
         </Button>
@@ -198,12 +202,13 @@
         <TextView
             android:id="@+id/q3t"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" Q1. What is question 3rd?"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text=" Q3. Who is the first President of India?"
             android:padding="5dp"
             android:background="@drawable/back23"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="15dp"
 
             >
 
@@ -220,7 +225,7 @@
                 android:id="@+id/rdq1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vijaya">
+                android:text="Dr.A.P.J.Abdul Kalam">
 
             </RadioButton>
 
@@ -228,7 +233,7 @@
                 android:id="@+id/rdq2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vijaya shree">
+                android:text="Shri Ram Nath Kovind">
 
             </RadioButton>
 
@@ -236,7 +241,7 @@
                 android:id="@+id/rdq3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vijaya shree kanwal">
+                android:text="Jill Biden">
 
             </RadioButton>
 
@@ -244,7 +249,7 @@
                 android:id="@+id/rdq4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vijji">
+                android:text="Heeraben Modi">
 
             </RadioButton>
 
@@ -252,12 +257,13 @@
 
         <Button
             android:layout_below="@id/rgq3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textSize="10dp"
             android:layout_alignParentEnd="true"
             android:layout_margin="20dp"
             android:text="Next"
+            android:background="@drawable/back23"
             android:onClick="button3">
 
         </Button>
@@ -274,12 +280,13 @@
         <TextView
             android:id="@+id/q4t"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=" Q1. What is question 4th ?"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="    Q4. What is national fruit of India ?"
             android:padding="5dp"
             android:background="@drawable/back23"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="15dp"
 
            >
 
@@ -296,7 +303,7 @@
                 android:id="@+id/req1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vijaya">
+                android:text="Apple">
 
             </RadioButton>
 
@@ -304,7 +311,7 @@
                 android:id="@+id/req2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vijaya shree">
+                android:text="Grapes">
 
             </RadioButton>
 
@@ -312,7 +319,7 @@
                 android:id="@+id/req3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vijaya shree kanwal">
+                android:text="Banana">
 
             </RadioButton>
 
@@ -320,7 +327,7 @@
                 android:id="@+id/req4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vijji">
+                android:text="Mango">
 
             </RadioButton>
 
@@ -328,13 +335,15 @@
 
         <Button
             android:layout_below="@id/rgq4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+          android:textSize="10dp"
             android:layout_alignParentEnd="true"
             android:layout_margin="20dp"
             android:text="Submit"
-            android:onClick="button4">
+
+            android:onClick="button4"
+            android:background="@drawable/back23">
 
         </Button>
 

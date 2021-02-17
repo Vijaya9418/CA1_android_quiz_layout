@@ -4,18 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity3"
+    android:background="@drawable/k2">
 
-    <Button
-        android:id="@+id/new1"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/r0"
+        android:background="@drawable/back1"
+        android:layout_margin="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/im2"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:src="@drawable/hope3"
+            android:layout_below="@id/heading"
+            android:layout_margin="9dp"
+            android:layout_centerVertical="true">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:id="@+id/heading"
+            android:layout_margin="9dp"
+
+            android:layout_centerHorizontal="true"
+            android:text="--*Result*--"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="9dp"
+      android:drawableRight="@drawable/ic_baseline_done_all_24"
+           android:layout_centerInParent="true"
+            android:text="Marks"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/r0"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/r1"
+        android:background="@drawable/back1"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Click on below to attempt more"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_baseline_subdirectory_arrow_left_24"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_margin="9dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/new1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="new"
+            android:onClick="back"></Button>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="new"
-        android:onClick="back"></Button>
+        android:layout_height="150dp"
+        android:id="@+id/r2"
+        android:layout_below="@id/r1"
+        android:background="@drawable/back1"
+        android:layout_margin="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback:-"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:drawableRight="@drawable/ic_baseline_feedback_24"
+            android:textStyle="bold"
+            android:layout_margin="12dp">
 
+        </TextView>
     <Button
-        android:layout_below="@id/new1"
+
         android:id="@+id/new2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,19 +110,23 @@
         android:text="rate us"
         android:onClick="back2"></Button>
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/teal_700"
-        android:rating="2"
-        android:visibility="invisible"
-      android:layout_below="@id/new2"
-        android:layout_centerHorizontal="true"
-        android:progressTint="@android:color/white"
-        android:progressBackgroundTint="@color/black">
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:rating="2"
+            android:visibility="invisible"
+            android:layout_below="@id/new2"
+            android:layout_centerHorizontal="true"
+            android:progressTint="@android:color/white"
+            android:progressBackgroundTint="@color/black">
 
-    </RatingBar>
+        </RatingBar>
+
+    </RelativeLayout>
+
+
 
     <ImageView
         android:id="@+id/im3"

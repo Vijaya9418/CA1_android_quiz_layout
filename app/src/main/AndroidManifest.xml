@@ -19,7 +19,6 @@
         <activity android:name=".header_and_footer" />
         <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
-        <activity android:name=".ToolBaar" />
         <activity android:name=".MainActivity">
 
         </activity>

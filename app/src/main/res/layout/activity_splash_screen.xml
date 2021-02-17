@@ -5,24 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splash_screen"
-    android:background="@drawable/splashh">
+    android:background="@drawable/k4">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:fontFamily="@font/bonbon"
-        android:text="welocme to Quiz"
-        android:layout_below="@+id/im"
-        android:textColor="@color/black"
-        android:textSize="40dp"></TextView>
+
 
     <ImageView
         android:id="@+id/im"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
+       android:layout_centerInParent="true"
         android:layout_marginTop="180dp"
         android:src="@drawable/hope"
         ></ImageView>

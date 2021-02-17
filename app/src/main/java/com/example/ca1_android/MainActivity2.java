@@ -9,11 +9,12 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
     RelativeLayout rv1,rv2,rv3,rv4;
     ProgressBar pg1,pg2,pg3;
-    String name;
+    String name,registration;
    TextView head,foot;
 
     @Override
@@ -24,12 +25,16 @@ public class MainActivity2 extends AppCompatActivity {
 
         Intent i=getIntent();
         name=i.getStringExtra("name");
+        registration=i.getStringExtra("registration");
 
         head=findViewById(R.id.head);
         foot=findViewById(R.id.foot);
 
-        head.setText("Name"+name);
-        foot.setText("Registration"+name);
+        head.setText(name);
+        foot.setText(registration);
+        Toast.makeText(getApplicationContext(),"Attempt all the quiz",Toast.LENGTH_SHORT).show();
+
+
 
 
 
@@ -99,6 +104,8 @@ public class MainActivity2 extends AppCompatActivity {
         rv3.setVisibility(View.GONE);
         rv4.setVisibility(View.VISIBLE);
 
+        Toast.makeText(getApplicationContext(),"this is the end of a quiz",Toast.LENGTH_SHORT).show();
+
 
 
         new Handler().postAtTime (new Runnable() {
@@ -114,6 +121,7 @@ public class MainActivity2 extends AppCompatActivity {
 
     public void button4(View v)
     {
+
         Intent intent=new Intent(getApplicationContext(),MainActivity3.class);
         startActivity(intent);
     }
