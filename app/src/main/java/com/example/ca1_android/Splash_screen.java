@@ -21,8 +21,6 @@ public class Splash_screen extends AppCompatActivity {
                     sleep(5000);
 
 
-
-
                 } catch (Exception e) {
 
                 } finally {
