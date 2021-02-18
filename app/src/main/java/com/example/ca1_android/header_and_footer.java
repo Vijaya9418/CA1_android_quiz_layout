@@ -10,5 +10,6 @@ public class header_and_footer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_header_and_footer);
+        
     }
 }
