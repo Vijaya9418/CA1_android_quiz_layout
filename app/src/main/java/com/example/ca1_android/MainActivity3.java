@@ -2,21 +2,26 @@ package com.example.ca1_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.zip.Inflater;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity3 extends AppCompatActivity {
     RatingBar ratingBar;
 
-    CircleImageView circleImageView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,21 +29,43 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
         ratingBar=findViewById(R.id.ratingBar);
 
-    //Custom taost
+
+        Intent i=getIntent();
+
+        TextView mar=findViewById(R.id.marks);
+        mar.setText(i.getStringExtra("marks"));
+        ImageView imgv=findViewById(R.id.im2);
+        String reg=i.getStringExtra("reg");
 
 
-//        LayoutInflater inflater=getLayoutInflater();
-//
-//       View l=inflater.inflate(R. ,findViewById(R.id.im2));
-//
-//        TextView tv1=l.findViewById(R.id.tv1);
-//        tv1.setText("i am custom toast");
-//
-//        Toast t=new Toast(getApplicationContext());
-//        t.setGravity(Gravity.CENTER_VERTICAL,0,0);
-//        t.setDuration(Toast.LENGTH_LONG);
-//        t.setView(l);
-//        t.show();
+        Toast toa=new Toast(this);
+        toa.setDuration(Toast.LENGTH_LONG);
+        toa.setGravity(Gravity.CENTER_VERTICAL,0,0);
+
+        LayoutInflater layoutInflater = null;
+        layoutInflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
+
+        View layoutt =layoutInflater.inflate(R.layout.customtoast,null);
+        TextView tt=layoutt.findViewById(R.id.toasttext);
+        tt.setText("Marks :"+i.getStringExtra("marks"));
+        ImageView imgtoast=layoutt.findViewById(R.id.toastimg);
+
+
+
+        if(reg.equals("11813692")) {
+            imgv.setImageResource(R.drawable.ian);imgtoast.setImageResource(R.drawable.ian);
+        }
+        else if(reg.equals("11813693")){
+            imgv.setImageResource(R.drawable.paul);imgtoast.setImageResource(R.drawable.paul);}
+        else if(reg.equals("11813694")){
+            imgv.setImageResource(R.drawable.hrithik);imgtoast.setImageResource(R.drawable.hrithik);}
+        else if(reg.equals("11813695")){
+            imgv.setImageResource(R.drawable.salman);imgtoast.setImageResource(R.drawable.salman);}
+
+
+        toa.setView(layoutt);
+        toa.show();
+
 
 
 

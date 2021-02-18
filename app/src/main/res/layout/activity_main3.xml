@@ -41,10 +41,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:id="@+id/marks"
             android:layout_margin="9dp"
-      android:drawableRight="@drawable/ic_baseline_done_all_24"
-           android:layout_centerInParent="true"
+            android:drawableRight="@drawable/ic_baseline_done_all_24"
+            android:layout_centerInParent="true"
             android:text="Marks"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -55,7 +55,7 @@
     <RelativeLayout
         android:layout_below="@id/r0"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="180dp"
         android:id="@+id/r1"
         android:background="@drawable/back1"
         android:layout_margin="15dp">
@@ -84,8 +84,8 @@
 
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
         android:id="@+id/r2"
         android:layout_below="@id/r1"
         android:background="@drawable/back1"
@@ -112,14 +112,15 @@
 
         <RatingBar
             android:id="@+id/ratingBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/teal_700"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/white"
             android:rating="2"
+            android:numStars="5"
             android:visibility="invisible"
             android:layout_below="@id/new2"
             android:layout_centerHorizontal="true"
-            android:progressTint="@android:color/white"
+            android:progressTint="@color/teal_700"
             android:progressBackgroundTint="@color/black">
 
         </RatingBar>

@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
     String mDescription[] = {"ian somehaldar", "paul wesley", "hrithik roshan", "salman khan", "shahrukh khan"};
     int images[] = {R.drawable.ian, R.drawable.paul, R.drawable.hrithik, R.drawable.salman, R.drawable.shahrukh};
 
-//    ArrayAdapter ar;
-//    AlertDialog.Builder builder;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar tb1 =findViewById(R.id.tb1);
         setSupportActionBar(tb1);
 
-         listView=findViewById(R.id.listview);
+        listView=findViewById(R.id.listview);
 
         MyAdapter adapter = new MyAdapter(this, mTitle, mDescription, images);
         listView.setAdapter(adapter);
@@ -55,28 +54,36 @@ public class MainActivity extends AppCompatActivity {
             @RequiresApi(api = Build.VERSION_CODES.N)
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(MainActivity.this,"Select any Student to Attempt quiz",Toast.LENGTH_LONG).show();
-                Intent i = new Intent(getApplicationContext(), MainActivity2.class);
+
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
+                alertDialogBuilder.setMessage("Are you sure, You want to Attempt quiz?");
+                alertDialogBuilder.setPositiveButton("yes",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+                                Intent i = new Intent(getApplicationContext(), MainActivity2.class);
 
 
 
+                                i.putExtra("name",mTitle[position]);
+                                i.putExtra("registration",mDescription[position]);
 
+                                startActivity(i);
+                            }
+                        });
 
-                i.putExtra("name",mTitle[position]);
-                i.putExtra("registration",mDescription[position]);
+                alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(MainActivity.this,"Select any Student to Attempt quiz",Toast.LENGTH_LONG).show();
 
-                startActivity(i);
-
-
-
-
-
-
-
-
+                    }
+                });
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialog.show();
             }
         });
-//
+
     }
 
     class MyAdapter extends ArrayAdapter<String> {
@@ -92,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
             this.rTitle = title;
             this.rDescription = description;
             this.rImgs = imgs;
-
         }
 
         @NonNull
@@ -104,112 +110,11 @@ public class MainActivity extends AppCompatActivity {
             TextView myTitle = row.findViewById(R.id.textView1);
             TextView myDescription = row.findViewById(R.id.textView2);
 
-
             images.setImageResource(rImgs[position]);
             myTitle.setText(rTitle[position]);
             myDescription.setText(rDescription[position]);
-
-
-
 
             return row;
         }
     }
 }
-
-
-
-//        ArrayList al=new ArrayList();
-//        al.add("                 Vijaya - 11813692");
-//        al.add("                 Golu - 11834568");
-//        al.add("                 Rinku - 11803591");
-//        al.add("                 Ranu - 11813402");
-//        al.add("                 Khushbu - 11806682");
-//
-//
-//        ar=new ArrayAdapter(getApplicationContext(), android.R.layout.simple_list_item_1, al);
-//        lv.setAdapter(ar);
-//
-//        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @RequiresApi(api = Build.VERSION_CODES.N)
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//
-//                Toast.makeText(MainActivity.this,"Quiz",Toast.LENGTH_LONG).show();
-//                Intent i = new Intent(getApplicationContext(), MainActivity2.class);
-//
-//
-//
-//                String element= (String) al.get(position);
-//
-//                i.putExtra("name",element);
-//                startActivity(i);
-//
-//
-//
-//
-//
-//
-//
-//
-//            }
-//        });
-//
-////        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-////            public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
-////
-////                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(getApplicationContext());
-////                alertDialogBuilder.setMessage("Are you sure, You wanted to make decision");
-////                        alertDialogBuilder.setPositiveButton("yes",
-////                                new DialogInterface.OnClickListener() {
-////                                    @Override
-////                                    public void onClick(DialogInterface arg0, int arg1) {
-////                                        Toast.makeText(MainActivity.this,"You clicked yes button",Toast.LENGTH_LONG).show();
-////                                        Intent i = new Intent(getApplicationContext(), MainActivity2.class);
-////                                        startActivity(i);
-////                                    }
-////                                });
-////
-////                        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
-////                           @Override
-////                           public void onClick(DialogInterface dialog, int which) {
-////                            finish();
-////                    }
-////                });
-////                AlertDialog alertDialog = alertDialogBuilder.create();
-////                alertDialog.show();
-////            }
-////        });
-//
-//
-//
-//
-//    }
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.my_menu,menu);
-//        MenuItem mSearch=menu.findItem(R.id.search_bar);
-//        SearchView msv=(SearchView)mSearch.getActionView();
-//
-//    if(msv!=null) {
-//    msv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//        @Override
-//        public boolean onQueryTextSubmit(String s) {
-//            return false;
-//
-//            //If you wanna send any data to nextActicity.class you can use
-////                i.putExtra(String key, value.get(position));
-//
-//
-//
-//        }
-//
-//        @Override
-//        public boolean onQueryTextChange(String s) {
-//            ar.getFilter().filter(s);
-//            return true;
-//        }
-//    });
-//}
-//        return super.onCreateOptionsMenu(menu);
-//    }
-//}
