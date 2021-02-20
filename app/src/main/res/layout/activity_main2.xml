@@ -10,6 +10,7 @@
     <include layout="@layout/activity_header_and_footer">
 
     </include>
+    
 
     <RelativeLayout
         android:id="@+id/rv1"
