@@ -17,6 +17,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:src="@drawable/hope3" />
+    
 
     <TextView
         android:id="@+id/toasttext"
