@@ -11,10 +11,8 @@
     <TextView
         android:id="@+id/head"
         android:text="this is header"
-
         android:textColor="@color/black"
         android:textSize="18dp"
-
         android:layout_centerHorizontal="true"
         android:background="@drawable/trans"
         android:gravity="center"

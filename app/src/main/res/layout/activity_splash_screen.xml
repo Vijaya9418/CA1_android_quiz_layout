@@ -8,8 +8,6 @@
     android:background="@drawable/k4">
 
 
-
-
     <ImageView
         android:id="@+id/im"
         android:layout_width="wrap_content"
