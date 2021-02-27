@@ -25,7 +25,6 @@
         android:textStyle="bold"
         android:fontFamily="@font/berkshire_swash"
         android:textSize="30dp">
-
     </TextView>
 
     <RelativeLayout
