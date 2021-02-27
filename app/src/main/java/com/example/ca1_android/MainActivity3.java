@@ -55,12 +55,17 @@ public class MainActivity3 extends AppCompatActivity {
         if(reg.equals("11813692")) {
             imgv.setImageResource(R.drawable.ian);imgtoast.setImageResource(R.drawable.ian);
         }
-        else if(reg.equals("11813693")){
+        else if(reg.equals("11806769")){
             imgv.setImageResource(R.drawable.paul);imgtoast.setImageResource(R.drawable.paul);}
-        else if(reg.equals("11813694")){
+        else if(reg.equals("11915692")){
             imgv.setImageResource(R.drawable.hrithik);imgtoast.setImageResource(R.drawable.hrithik);}
-        else if(reg.equals("11813695")){
+        else if(reg.equals("125690")){
             imgv.setImageResource(R.drawable.salman);imgtoast.setImageResource(R.drawable.salman);}
+        else if(reg.equals("16568959")){
+            imgv.setImageResource(R.drawable.shahrukh);imgtoast.setImageResource(R.drawable.shahrukh);}
+        else
+            imgv.setImageResource(R.drawable.p1);imgtoast.setImageResource(R.drawable.p1);
+
 
 
         toa.setView(layoutt);

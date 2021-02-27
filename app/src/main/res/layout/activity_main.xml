@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/splashh">
+    android:background="@drawable/q2">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tb1"
 
 
-        android:background="#939390"
+        android:background="#BFFDFDFB"
         app:title="Quiz"
+        android:fontFamily="@font/berkshire_swash"
         app:menu="@menu/my_menu"
         app:titleTextColor="@color/black"
 
@@ -24,25 +25,29 @@
 
 
     <ScrollView
-        android:layout_marginTop="60dp"
-        android:layout_width="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_width="320dp"
         android:layout_height="390dp"
+
         android:layout_centerInParent="true"
         android:id="@+id/scrll"
         android:layout_below="@id/tb1">
 
         <RelativeLayout
 
-            android:layout_width="wrap_content"
+            android:layout_width="280dp"
             android:layout_height="290dp"
-            android:background="@drawable/back2"
-            android:layout_margin="20dp">
+
+            android:background="@drawable/back3"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/berkshire_swash">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="--*List*--"
                 android:textSize="20dp"
+                android:fontFamily="@font/berkshire_swash"
                 android:textStyle="bold"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/tv1"
@@ -85,15 +90,7 @@
         android:src="@drawable/hope2"
         ></ImageView>
 
-    <Button
-        android:id="@+id/reg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/scrll"
-        android:onClick="register"
 
-        android:layout_marginTop="-506dp"
-        android:text="Register" />
 
 
 </RelativeLayout>
