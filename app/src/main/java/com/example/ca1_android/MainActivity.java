@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
         listView=findViewById(R.id.listview);
 
-
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("regusers");
 
