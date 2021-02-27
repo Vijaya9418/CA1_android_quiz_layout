@@ -19,7 +19,6 @@
         app:titleTextColor="@color/black"
 
         app:subtitleTextColor="@color/white">
-
     </androidx.appcompat.widget.Toolbar>
 
 
