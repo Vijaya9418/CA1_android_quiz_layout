@@ -28,8 +28,6 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
         ratingBar=findViewById(R.id.ratingBar);
-
-
         Intent i=getIntent();
 
         TextView mar=findViewById(R.id.marks);
