@@ -10,8 +10,6 @@
     <include layout="@layout/activity_header_and_footer">
 
     </include>
-    
-    
 
     <RelativeLayout
         android:id="@+id/rv1"
@@ -27,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:gravity="center_vertical"
-            android:text="   Q1. What is the capital of India?"
+            android:text="   Please wait Loading...."
             android:padding="5dp"
             android:background="@drawable/back23"
             android:layout_marginLeft="5dp"
@@ -52,7 +50,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Calcutta">
+                android:text="Loading..">
 
             </RadioButton>
 
@@ -61,7 +59,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Delhi">
+                android:text="Loading..">
 
             </RadioButton>
 
@@ -70,7 +68,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Bihar">
+                android:text="Loading..">
 
             </RadioButton>
 
@@ -79,7 +77,7 @@
                 android:layout_width="250dp"
 
                 android:layout_height="wrap_content"
-                android:text="Assam">
+                android:text="Loading..">
 
             </RadioButton>
 
@@ -96,253 +94,31 @@
             android:layout_alignParentEnd="true"
             android:layout_margin="20dp"
             android:text="Next"
+            android:visibility="invisible"
+            android:id="@+id/nextbtn"
             android:onClick="button1">
         </Button>
 
 
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_margin="35dp"
-        android:background="@drawable/back2">
-        <TextView
-            android:id="@+id/q2t"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center_vertical"
-            android:text="   Q2. Who is the national bird of India?"
-            android:padding="5dp"
-            android:background="@drawable/back23"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-
-            >
-
-        </TextView>
-
-        <RadioGroup
-            android:id="@+id/rgq2"
-            android:layout_below="@id/q2t"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp">
-
-            <RadioButton
-                android:id="@+id/rcq1"
-                android:layout_width="250dp"
-
-                android:layout_height="wrap_content"
-                android:text="Dove"
-                >
-
-            </RadioButton>
-
-            <RadioButton
-                android:id="@+id/rcq2"
-                android:layout_width="250dp"
-
-                android:layout_height="wrap_content"
-                android:text="Peacock">
-
-            </RadioButton>
-
-            <RadioButton
-                android:id="@+id/rcq3"
-                android:layout_width="250dp"
-
-                android:layout_height="wrap_content"
-                android:text="sparrow">
-
-            </RadioButton>
-
-            <RadioButton
-                android:id="@+id/rcq4"
-                android:layout_width="250dp"
-
-                android:layout_height="wrap_content"
-                android:text="Goose">
-
-            </RadioButton>
-
-        </RadioGroup>
-
         <Button
-            android:layout_below="@id/rgq2"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:textSize="10dp"
-            android:layout_alignParentEnd="true"
-            android:layout_margin="20dp"
-            android:text="Next"
-            android:background="@drawable/back23"
-            android:onClick="button2">
-
-        </Button>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rv3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_margin="35dp"
-        android:background="@drawable/back2">
-        <TextView
-            android:id="@+id/q3t"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center_vertical"
-            android:text=" Q3. Who is the 11th President of India?"
-            android:padding="5dp"
-            android:background="@drawable/back23"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-
-            >
-
-        </TextView>
-
-        <RadioGroup
-            android:id="@+id/rgq3"
-            android:layout_below="@id/q3t"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp">
-
-            <RadioButton
-                android:id="@+id/rdq1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Dr.A.P.J.Abdul Kalam">
-
-            </RadioButton>
-
-            <RadioButton
-                android:id="@+id/rdq2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Shri Ram Nath Kovind">
-
-            </RadioButton>
-
-            <RadioButton
-                android:id="@+id/rdq3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jill Biden">
-
-            </RadioButton>
-
-            <RadioButton
-                android:id="@+id/rdq4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Heeraben Modi">
-
-            </RadioButton>
-
-        </RadioGroup>
-
-        <Button
-            android:layout_below="@id/rgq3"
-            android:layout_width="70dp"
-            android:layout_height="40dp"
-            android:textSize="10dp"
-            android:layout_alignParentEnd="true"
-            android:layout_margin="20dp"
-            android:text="Next"
-            android:background="@drawable/back23"
-            android:onClick="button3">
-
-        </Button>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/rv4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_margin="35dp"
-        android:background="@drawable/back2">
-        <TextView
-            android:id="@+id/q4t"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center_vertical"
-            android:text="    Q4. What is national fruit of India ?"
-            android:padding="5dp"
-            android:background="@drawable/back23"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-
-            >
-
-        </TextView>
-
-        <RadioGroup
-            android:id="@+id/rgq4"
-            android:layout_below="@id/q4t"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp">
-
-            <RadioButton
-                android:id="@+id/req1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Apple">
-
-            </RadioButton>
-
-            <RadioButton
-                android:id="@+id/req2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Grapes">
-
-            </RadioButton>
-
-            <RadioButton
-                android:id="@+id/req3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Banana">
-
-            </RadioButton>
-
-            <RadioButton
-                android:id="@+id/req4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Mango">
-
-            </RadioButton>
-
-        </RadioGroup>
-
-        <Button
-            android:layout_below="@id/rgq4"
+            android:id="@+id/submitbtn"
+            android:layout_below="@id/rgq1"
             android:layout_width="80dp"
             android:layout_height="40dp"
             android:textSize="10dp"
             android:layout_alignParentEnd="true"
             android:layout_margin="20dp"
             android:text="Submit"
-
+            android:visibility="invisible"
             android:onClick="button4"
             android:background="@drawable/back23">
 
         </Button>
 
     </RelativeLayout>
+
+
+
     <RelativeLayout
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
@@ -354,12 +130,13 @@
         android:layout_height="200dp">
 
         <ProgressBar
-            android:layout_width="250dp"
-            android:layout_height="30dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
             android:layout_centerInParent="true"
+            android:progress="50"
+            android:max="100"
             android:id="@+id/pg1"
-
-
+            style="?android:attr/progressBarStyleHorizontal"
             />
     </RelativeLayout>
     <ImageView

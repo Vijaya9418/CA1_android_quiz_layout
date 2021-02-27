@@ -54,10 +54,10 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_below="@id/r0"
+        android:layout_below="@id/r3"
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:id="@+id/r1"
+        android:id="@+id/r2"
         android:background="@drawable/back1"
         android:layout_margin="15dp">
 
@@ -87,8 +87,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
-        android:id="@+id/r2"
-        android:layout_below="@id/r1"
+        android:id="@+id/r3"
+        android:layout_below="@id/r0"
         android:background="@drawable/back1"
         android:layout_margin="15dp">
         <TextView
@@ -102,6 +102,15 @@
             android:layout_margin="12dp">
 
         </TextView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toStartOf="@id/new2"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_baseline_star_rate_24">
+
+        </ImageView>
     <Button
 
         android:id="@+id/new2"
@@ -110,6 +119,16 @@
         android:layout_centerInParent="true"
         android:text="rate us"
         android:onClick="back2"></Button>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/new2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_baseline_star_rate_24">
+
+        </ImageView>
 
         <RatingBar
             android:id="@+id/ratingBar"
