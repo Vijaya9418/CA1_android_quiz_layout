@@ -13,8 +13,7 @@
         android:layout_width="100dp"
         android:layout_height="120dp"
         android:layout_margin="20dp"
-
-        android:layout_marginStart="16dp"
+       android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:src="@drawable/hope3" />
     

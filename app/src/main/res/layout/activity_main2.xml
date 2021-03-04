@@ -34,8 +34,6 @@
             android:layout_marginRight="5dp"
             android:textColor="@color/white"
             android:textSize="15dp"
-
-
             >
 
         </TextView>

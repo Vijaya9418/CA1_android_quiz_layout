@@ -19,8 +19,6 @@ public class Splash_screen extends AppCompatActivity {
                 try {
                     super.run();
                     sleep(5000);
-
-
                 } catch (Exception e) {
 
                 } finally {

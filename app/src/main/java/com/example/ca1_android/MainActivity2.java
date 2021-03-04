@@ -42,7 +42,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+       FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("question");
 
         bt1=findViewById(R.id.nextbtn);
