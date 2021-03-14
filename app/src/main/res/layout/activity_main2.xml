@@ -43,12 +43,13 @@
             android:layout_below="@id/q1t"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp">
+            android:layout_centerInParent="true">
 
             <RadioButton
                 android:id="@+id/rbq1"
-                android:layout_width="250dp"
-
+                android:layout_width="280dp"
+           android:background="@drawable/back5"
+               android:layout_marginTop="15dp"
                 android:layout_height="wrap_content"
                 android:text="Loading..">
 
@@ -56,8 +57,9 @@
 
             <RadioButton
                 android:id="@+id/rbq2"
-                android:layout_width="250dp"
-
+                android:layout_width="280dp"
+                android:background="@drawable/back5"
+                android:layout_marginTop="5dp"
                 android:layout_height="wrap_content"
                 android:text="Loading..">
 
@@ -65,8 +67,9 @@
 
             <RadioButton
                 android:id="@+id/rbq3"
-                android:layout_width="250dp"
-
+                android:layout_width="280dp"
+                android:background="@drawable/back5"
+                android:layout_marginTop="5dp"
                 android:layout_height="wrap_content"
                 android:text="Loading..">
 
@@ -74,8 +77,9 @@
 
             <RadioButton
                 android:id="@+id/rbq4"
-                android:layout_width="250dp"
-
+                android:layout_width="280dp"
+                android:background="@drawable/back5"
+                android:layout_marginTop="5dp"
                 android:layout_height="wrap_content"
                 android:text="Loading..">
 

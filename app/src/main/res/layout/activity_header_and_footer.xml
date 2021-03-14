@@ -17,7 +17,7 @@
         android:background="@drawable/trans"
         android:gravity="center"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="40dp">
 
     </TextView>
 
@@ -34,7 +34,7 @@
         android:layout_centerHorizontal="true"
 
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="40dp">
 
     </TextView>
 

@@ -116,20 +116,30 @@ public class MainActivity2 extends AppCompatActivity {
     public void button1(View v)
     {
         RadioGroup vi=findViewById(R.id.rgq1);
+
         if(count!=0){
             if(vi.getCheckedRadioButtonId()==R.id.rbq1){
+
+
+
                 if(and.get(count - 1).equals("A"))
                     marks+=1;
             }
             else if(vi.getCheckedRadioButtonId()==R.id.rbq2){
+
+
                 if(and.get(count - 1).equals("B"))
                     marks+=1;
             }
             else if(vi.getCheckedRadioButtonId()==R.id.rbq3){
+
+
                 if(and.get(count - 1).equals("C"))
                     marks+=1;
             }
             else if(vi.getCheckedRadioButtonId()==R.id.rbq4){
+
+
                 if(and.get(count - 1).equals("D"))
                     marks+=1;
             }

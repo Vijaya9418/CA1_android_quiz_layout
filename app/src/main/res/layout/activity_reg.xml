@@ -42,7 +42,7 @@
             android:ems="10"
             android:hint="Name"
             android:fontFamily="@font/berkshire_swash"
-            android:textColorHint="@color/black"
+           android:gravity="center"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:inputType="textPersonName"
