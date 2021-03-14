@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".choosequiz">
+
+
+    <ScrollView
+        android:layout_marginTop="120dp"
+        android:layout_width="320dp"
+        android:layout_height="390dp"
+
+        android:layout_centerInParent="true"
+        android:id="@+id/scrll"
+        android:layout_below="@id/tb1">
+
+        <RelativeLayout
+
+            android:layout_width="280dp"
+            android:layout_height="290dp"
+
+            android:background="@drawable/back3"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/berkshire_swash">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose quiz1"
+                android:textSize="20dp"
+                android:fontFamily="@font/berkshire_swash"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/quiz1"
+                android:textColor="@color/black">
+
+            </TextView>
+
+
+
+            <ListView
+                android:layout_margin="18dp"
+                android:layout_below="@id/quiz1"
+                android:backgroundTint="@color/white"
+                android:layout_centerInParent="true"
+                android:id="@+id/quizlist"
+                android:background="@drawable/back2"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                >
+
+            </ListView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
