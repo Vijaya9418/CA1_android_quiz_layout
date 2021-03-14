@@ -1,7 +1,9 @@
 package com.example.ca1_android;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,6 +27,9 @@ public class reg extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg);
+
+        openalert();
+
         name=findViewById(R.id.name);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("regusers");
@@ -51,8 +56,35 @@ public class reg extends AppCompatActivity {
             }
         });
 
+
+
+
+
     }
 
+    private  void openalert(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(reg.this);
+        alertDialogBuilder.setMessage("Have u Registered Already?");
+        alertDialogBuilder.setPositiveButton("yes",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        Intent iv =new Intent(reg.this,MainActivity.class);
+                        iv.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+                        startActivity(iv);
+                    }
+                });
+
+        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(reg.this,"Create user to continue!",Toast.LENGTH_LONG).show();
+                //k  finish();
+            }
+        });
+        AlertDialog alertDialog = alertDialogBuilder.create();
+        alertDialog.show();
+    }
     public void submit(View view) {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -66,5 +98,11 @@ public class reg extends AppCompatActivity {
         }
         else
             Toast.makeText(this,"Try different Username!",Toast.LENGTH_SHORT).show();
+    }
+
+    public void skip(View view) {
+        Intent iv =new Intent(reg.this,MainActivity.class);
+        iv.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
+        startActivity(iv);
     }
 }
