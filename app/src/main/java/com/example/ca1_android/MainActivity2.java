@@ -53,6 +53,8 @@ public class MainActivity2 extends AppCompatActivity {
         rd=findViewById(R.id.rbq4);
         question=findViewById(R.id.q1t);
 
+
+
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
