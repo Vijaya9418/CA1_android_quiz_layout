@@ -3,6 +3,8 @@ package com.example.ca1_android;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -42,8 +44,11 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-       FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("question");
+        Intent old=getIntent();
+        String quizName=old.getStringExtra("quizname");
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        System.out.println(quizName+".............................name");
+        DatabaseReference myRef = database.getReference("quiz").child(quizName);
 
         bt1=findViewById(R.id.nextbtn);
         bt2=findViewById(R.id.submitbtn);
@@ -53,21 +58,21 @@ public class MainActivity2 extends AppCompatActivity {
         rd=findViewById(R.id.rbq4);
         question=findViewById(R.id.q1t);
 
-
-
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
                 for(DataSnapshot i:dataSnapshot.getChildren()){
-                    System.out.println(i.child("ques").getValue(String.class)+"....................................");
-                    ques.add(i.child("ques").getValue(String.class));
-                    A.add(i.child("A").getValue(String.class));
-                    B.add(i.child("B").getValue(String.class));
-                    C.add(i.child("C").getValue(String.class));
-                    D.add(i.child("D").getValue(String.class));
-                    and.add(i.child("ans").getValue(String.class));
+                    if(i.getChildrenCount()>2) {
+                        System.out.println(i.child("ques").getValue(String.class) + "....................................");
+                        ques.add(i.child("ques").getValue(String.class));
+                        A.add(i.child("A").getValue(String.class));
+                        B.add(i.child("B").getValue(String.class));
+                        C.add(i.child("C").getValue(String.class));
+                        D.add(i.child("D").getValue(String.class));
+                        and.add(i.child("ans").getValue(String.class));
+                    }
                 }
                 View temp=null;
                 bt1.setVisibility(View.VISIBLE);
@@ -107,6 +112,23 @@ public class MainActivity2 extends AppCompatActivity {
         pg1=findViewById(R.id.pg1);
 
 
+        RadioGroup vi=findViewById(R.id.rgq1);
+        vi.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                RadioButton rbq1=findViewById(R.id.rbq1);
+                rbq1.setBackground(getDrawable(R.drawable.back5));
+                RadioButton rbq2=findViewById(R.id.rbq2);
+                rbq2.setBackground(getDrawable(R.drawable.back5));
+                RadioButton rbq3=findViewById(R.id.rbq3);
+                rbq3.setBackground(getDrawable(R.drawable.back5));
+                RadioButton rbq4=findViewById(R.id.rbq4);
+                rbq4.setBackground(getDrawable(R.drawable.back5));
+                RadioButton anyName=findViewById(i);
+                if(anyName!=null)
+                    anyName.setBackgroundColor(Color.parseColor("#4F80E2"));
+            }
+        });
 
 
 
@@ -118,8 +140,9 @@ public class MainActivity2 extends AppCompatActivity {
     public void button1(View v)
     {
         RadioGroup vi=findViewById(R.id.rgq1);
-
         if(count!=0){
+
+
             if(vi.getCheckedRadioButtonId()==R.id.rbq1){
 
 
@@ -178,6 +201,7 @@ public class MainActivity2 extends AppCompatActivity {
     {
         if(count==ques.size()) {
             RadioGroup vi = findViewById(R.id.rgq1);
+
             if (vi.getCheckedRadioButtonId() == R.id.rbq1) {
                 if (and.get(count - 1).equals("A"))
                     marks += 1;
