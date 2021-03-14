@@ -93,9 +93,7 @@ public class MainActivity extends AppCompatActivity {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface arg0, int arg1) {
-                                Intent i = new Intent(getApplicationContext(), MainActivity2.class);
-
-
+                                Intent i = new Intent(getApplicationContext(), choosequiz.class);
 
                                 i.putExtra("name",mTitle[position]);
                                 i.putExtra("registration",mDescription[position]);
@@ -114,15 +112,6 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog alertDialog = alertDialogBuilder.create();
                 alertDialog.show();
                 //end
-
-
-
-
-
-
-
-
-
             }
         });
 //
@@ -244,11 +233,9 @@ public class MainActivity extends AppCompatActivity {
                 TextView myTitle = row.findViewById(R.id.textView1);
                 TextView myDescription = row.findViewById(R.id.textView2);
 
-
                 images.setImageResource(rImgs[position]);
                 myTitle.setText(rTitle[position]);
                 myDescription.setText(rDescription[position]);
-
 
                 return row;}
             catch(Exception e) {

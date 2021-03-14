@@ -30,6 +30,7 @@
     <RelativeLayout
         android:layout_width="250dp"
         android:layout_height="200dp"
+        android:id="@+id/relname"
         android:layout_centerInParent="true"
         android:background="@drawable/back3">
 
@@ -72,6 +73,18 @@
 
         android:src="@drawable/hope2"
         ></ImageView>
+
+    <Button
+        android:id="@+id/button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relname"
+        android:layout_centerHorizontal="true"
+android:onClick="skip"
+        android:layout_marginTop="195dp"
+
+        android:text="Skip" />
 
 
 </RelativeLayout>
