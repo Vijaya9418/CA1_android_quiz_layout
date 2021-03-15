@@ -118,16 +118,24 @@ public class MainActivity2 extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 RadioButton rbq1=findViewById(R.id.rbq1);
                 rbq1.setBackground(getDrawable(R.drawable.back5));
+                rbq1.setTextColor(Color.parseColor("#000000"));
+
                 RadioButton rbq2=findViewById(R.id.rbq2);
                 rbq2.setBackground(getDrawable(R.drawable.back5));
+                rbq2.setTextColor(Color.parseColor("#000000"));
+
                 RadioButton rbq3=findViewById(R.id.rbq3);
                 rbq3.setBackground(getDrawable(R.drawable.back5));
+                rbq3.setTextColor(Color.parseColor("#000000"));
+
                 RadioButton rbq4=findViewById(R.id.rbq4);
                 rbq4.setBackground(getDrawable(R.drawable.back5));
+                rbq4.setTextColor(Color.parseColor("#000000"));
                 RadioButton anyName=findViewById(i);
-                if(anyName!=null)
-                    anyName.setBackgroundColor(R.drawable.back6);
-//                    anyName.setTextColor(Color.parseColor("#FFFFFF"));
+                if(anyName!=null) {
+                    anyName.setBackground(getDrawable(R.drawable.back6));
+                    anyName.setTextColor(Color.parseColor("#FFFFFF"));
+                }
             }
         });
 

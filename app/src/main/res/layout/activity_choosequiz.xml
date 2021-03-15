@@ -26,15 +26,13 @@
         android:layout_height="390dp"
 
         android:layout_centerInParent="true"
-        android:id="@+id/scrll"
-
-       >
+        android:id="@+id/scrll">
 
         <RelativeLayout
 
             android:layout_width="280dp"
             android:layout_height="290dp"
-            android:background="@drawable/back2"
+            android:background="@drawable/back3"
 
             android:layout_margin="20dp"
             android:fontFamily="@font/berkshire_swash">
@@ -61,7 +59,7 @@
                 android:backgroundTint="@color/white"
                 android:layout_centerInParent="true"
                 android:id="@+id/quizlist"
-                android:background="@drawable/back3"
+                android:background="@drawable/back2"
 
                 android:layout_width="wrap_content"
                 android:layout_height="300dp"
