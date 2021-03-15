@@ -105,4 +105,6 @@ public class reg extends AppCompatActivity {
         iv.setFlags(Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT);
         startActivity(iv);
     }
+
 }
+

@@ -126,7 +126,8 @@ public class MainActivity2 extends AppCompatActivity {
                 rbq4.setBackground(getDrawable(R.drawable.back5));
                 RadioButton anyName=findViewById(i);
                 if(anyName!=null)
-                    anyName.setBackgroundColor(Color.parseColor("#4F80E2"));
+                    anyName.setBackgroundColor(R.drawable.back6);
+//                    anyName.setTextColor(Color.parseColor("#FFFFFF"));
             }
         });
 
