@@ -62,7 +62,7 @@ public class MainActivity3 extends AppCompatActivity {
         else if(reg.equals("16568959")){
             imgv.setImageResource(R.drawable.shahrukh);imgtoast.setImageResource(R.drawable.shahrukh);}
         else
-            imgv.setImageResource(R.drawable.p1);imgtoast.setImageResource(R.drawable.p1);
+            imgv.setImageResource(R.drawable.person);imgtoast.setImageResource(R.drawable.person);
 
 
 

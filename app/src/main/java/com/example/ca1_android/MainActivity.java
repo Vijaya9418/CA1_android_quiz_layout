@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0;i<names.size();i++){
             newarr[cat]=names.get(i);
             newarrd[cat]=names.get(i);
-            newarri[cat]=R.drawable.p1;
+            newarri[cat]=R.drawable.person;
             cat++;
         }
         mTitle=newarr;
